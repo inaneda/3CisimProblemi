@@ -1,5 +1,5 @@
-# ThreeBodyProblem Projesi  '2024-2025 Güz'
-
+# ThreeBodyProblem Projesi  
+'2024-2025 Güz'
 Bu proje, üç cisim problemini simüle eden bir uygulamadır. Cisimlerin konum ve hızlarının hesaplanması, Newton'un Kütle Çekim Yasası'na dayanır. Proje ayrıca, roketlerin hareketlerini ve itki kuvvetlerini de hesaba katar. Proje hem Linux hem de Windows sistemlerinde çalıştırılabilir.
 
 ## Kullanılan Sürümler, Gereksinimler
