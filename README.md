@@ -11,12 +11,15 @@ Linux, Windows veya WSL yüklenmiş bir sistem.
 Bilgilendirme
 
 "canvas" kütüphanesi ile oluşturulan ".html" dosyası projenin build klasöründe bulunmaktadır.
+
 Ana program dosyası "main.cpp" ise
+
 Linux   -> '/path/to/ThreeBodyProblem/build/3CisimProblemi.html' 
 
 Windows -> 'C:\path\to\ThreeBodyProblem/build/3CisimProblemi.html'
 
 Ana program dosyası "ekozellikler.cpp" ise
+
 Linux   -> '/path/to/ThreeBodyProblem/build/ekOzellikli3CisimProblemi.html' 
 
 Windows -> 'C:\path\to\ThreeBodyProblem/build/ekOzellikli3CisimProblemi.html'
