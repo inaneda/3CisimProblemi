@@ -1,72 +1,97 @@
-ThreeBodyProblem Projesi
+# ThreeBodyProblem Projesi
 
-Bu proje, üç cisim problemini simüle eden bir uygulamadır.  Cisimlerin konum ve hızlarının hesaplanması, Newton'un Kütle Çekim Yasası'na dayanır. Proje ayrıca, roketlerin hareketlerini ve itki kuvvetlerini de hesaba katar. Proje, hem Linux hem de Windows sistemlerinde çalıştırılabilir.
+Bu proje, üç cisim problemini simüle eden bir uygulamadır. Cisimlerin konum ve hızlarının hesaplanması, Newton'un Kütle Çekim Yasası'na dayanır. Proje ayrıca, roketlerin hareketlerini ve itki kuvvetlerini de hesaba katar. Proje hem Linux hem de Windows sistemlerinde çalıştırılabilir.
 
-Kullanılan Sürümler, Gereksinimler
+## Kullanılan Sürümler, Gereksinimler
 
-C++17 desteği sunan bir derleyici (GCC).
-CMake (v3.10).
-Linux, Windows veya WSL yüklenmiş bir sistem.
+- C++17 desteği sunan bir derleyici (GCC)
+- CMake (v3.10+)
+- Linux, Windows veya WSL kurulu bir sistem
 
-Bilgilendirme
+---
 
-"canvas" kütüphanesi ile oluşturulan ".html" dosyası projenin build klasöründe bulunmaktadır.
+## Bilgilendirme
 
+`canvas` kütüphanesi ile oluşturulan `.html` dosyası projenin `build` klasöründe bulunmaktadır.
 
-Ana program dosyası "main.cpp" ise
+**Ana program dosyası `main.cpp` ise:**
 
-Linux   -> '/path/to/ThreeBodyProblem/build/3CisimProblemi.html' 
+- **Linux:**  
+  `/path/to/ThreeBodyProblem/build/3CisimProblemi.html`
 
-Windows -> 'C:\path\to\ThreeBodyProblem/build/3CisimProblemi.html'
+- **Windows:**  
+  `C:\path\to\ThreeBodyProblem\build\3CisimProblemi.html`
 
+**Ana program dosyası `ekozellikler.cpp` ise:**
 
-Ana program dosyası "ekozellikler.cpp" ise
+- **Linux:**  
+  `/path/to/ThreeBodyProblem/build/ekOzellikli3CisimProblemi.html`
 
-Linux   -> '/path/to/ThreeBodyProblem/build/ekOzellikli3CisimProblemi.html' 
+- **Windows:**  
+  `C:\path\to\ThreeBodyProblem\build\ekOzellikli3CisimProblemi.html`
 
-Windows -> 'C:\path\to\ThreeBodyProblem/build/ekOzellikli3CisimProblemi.html'
+---
 
+## Projenin Çalıştırılması
 
-Projenin Çalıştırılması
+### 1. Proje Klasörüne Gitme
 
-1. Projenin Yoluna Gitme
+İlk olarak, projenin bulunduğu dizine gidilmelidir:
 
-İlk olarak, projenin bulunduğu dizine gidilmelidir. Aşağıdaki komutlarla ThreeBodyProblem projesine erişebilirsiniz:
+- **Linux veya WSL:**
+  ```bash
+  cd /path/to/ThreeBodyProblem
+  ```
 
-Linux veya WSL:
-cd /path/to/ThreeBodyProblem
+- **Windows:**
+  ```cmd
+  cd C:\path\to\ThreeBodyProblem
+  ```
 
-Windows:
-cd C:\path\to\ThreeBodyProblem
+---
 
-2. Projenin CMake ile Yapılandırılması
+### 2. CMake ile Yapılandırma
 
-Projenin çalıştırılabilmesi için, proje dizini içerisindeki build klasörünü kullanarak CMake ile yapılandırma yapılmalıdır. Şu adımlar takip edilmelidir:
+`build` klasörüne gidilerek proje CMake ile yapılandırılmalıdır:
 
-Linux veya WSL:
-cd build
-cmake ..
+- **Linux veya WSL:**
+  ```bash
+  cd build
+  cmake ..
+  ```
 
-Windows:
-cd build
-cmake ..
+- **Windows:**
+  ```cmd
+  cd build
+  cmake ..
+  ```
 
-3. Projenin Derlenmesi
+---
 
-Projeyi derlemek için şu komut kullanılır:
+### 3. Projenin Derlenmesi
 
-Linux veya WSL:
-make
+- **Linux veya WSL:**
+  ```bash
+  make --build .
+  ```
 
-Windows:
-cmake --build .
+- **Windows:**
+  ```cmd
+  cmake --build .
+  ```
 
-4. Projenin Çalıştırılması
+---
 
-Derleme başarıyla tamamlandıktan sonra, projeyi çalıştırmak için aşağıdaki komutlar kullanılır:
+### 4. Projenin Çalıştırılması
 
-Linux veya WSL:
-./ThreeBodyProblem
+Derleme başarılı tamamlandıktan sonra çalıştırmak için:
 
-Windows:
-ThreeBodyProblem.exe
+- **Linux veya WSL:**
+  ```bash
+  ./ThreeBodyProblem
+  ```
+
+- **Windows:**
+  ```cmd
+  ThreeBodyProblem.exe
+  ```
